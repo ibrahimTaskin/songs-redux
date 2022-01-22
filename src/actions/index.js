@@ -6,3 +6,17 @@ export const selectSong = (song) => {
     payload: song,
   };
 };
+
+export const incrementCount = () => {
+  return {
+    type: "INCEREMENT_COUNT",
+    payload: 1,
+  };
+};
+
+export const decrementCount = () => {
+  return {
+    type: "DECEREMENT_COUNT",
+    payload: 1,
+  };
+};
