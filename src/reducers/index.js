@@ -18,11 +18,11 @@ const selectedSongReducer = (selectedSong = null, action) => {
 };
 
 const countReducer = (count = 0, action) => {
-  switch (action) {
-    case action.type === "INCEREMENT_COUNT":
+  switch (action.type) {
+    case "INCEREMENT_COUNT":
       return count + action.payload;
-    case action.type === "DECEREMENT_COUNT":
-      return count + action.payload;
+    case "DECEREMENT_COUNT":
+      return count - action.payload;
     default:
       return count;
   }
